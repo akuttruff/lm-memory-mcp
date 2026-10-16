@@ -41,12 +41,12 @@ describe("remember", () => {
   });
 
   it("keeps the file private and survives reopening", () => {
-    store.remember("Born in Culver City");
+    store.remember("Born in Lisbon");
     const file = path.join(dir, "memory.sqlite");
     assert.equal(fs.statSync(file).mode & 0o077, 0);
     store.close();
     store = new MemoryStore(file);
-    assert.equal(store.list()[0]!.text, "Born in Culver City");
+    assert.equal(store.list()[0]!.text, "Born in Lisbon");
   });
 });
 

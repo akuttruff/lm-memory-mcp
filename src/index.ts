@@ -12,7 +12,7 @@ const TOOLS = [
     description:
       "Save one durable fact about the user for future conversations: preferences, birth details, people in their life, " +
       "ongoing situations, how they like answers. One fact per call, written as a short standalone sentence " +
-      "(\"The user was born May 10, 1984 in Culver City, CA\"). " +
+      "(\"The user has a younger sister named Mara who lives in Lisbon\"). " +
       "Don't save small talk, one-off questions, or anything that's only true for this conversation. " +
       "If a fact already saved has changed, use update_memory on it instead of saving a second, conflicting one.",
     inputSchema: {
