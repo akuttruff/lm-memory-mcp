@@ -1,8 +1,9 @@
 # lm-memory-mcp
 
-Persistent memory for a local model: a small MCP server that LM Studio (or
-any MCP host) launches over stdio. The model gets four tools and a SQLite
-file to keep durable facts about the user across conversations.
+lm-memory-mcp gives a local model a memory that lasts. It is a small MCP
+server that LM Studio (or any MCP host) launches over stdio, and it hands
+the model four tools and a SQLite file for keeping durable facts about the
+user across conversations.
 
 ## Tools
 
