@@ -5,6 +5,20 @@ server that LM Studio (or any MCP host) launches over stdio, and it hands
 the model four tools and a SQLite file for keeping durable facts about the
 user across conversations.
 
+## In LM Chat
+
+[LM Chat](https://github.com/akuttruff/lm-chat), a chat client for local
+models, runs this server as its memory. Each tool call shows up in the thread
+as a card that opens to what the model sent and what came back:
+
+<img src="docs/screenshots/memory-desktop.png" alt="LM Chat on a desktop: a recall card listing three saved facts, then a remember card saving a new one" />
+
+<p>The model checks what it already knows with <code>recall</code>, then saves the new plan with <code>remember</code> before it answers.</p>
+
+<p align="center"><img src="docs/screenshots/memory-phone.png" width="300" alt="The same recall and remember cards on a phone" /></p>
+
+<p align="center">The same chat on a phone.</p>
+
 ## Tools
 
 - `remember` saves one fact as a short standalone sentence.
